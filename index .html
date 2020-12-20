@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="sr">
+
+<head>
+    <title>Templejt</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="icon" href="pic.png" type="img/png">
+    <!--AKO JE ICON FILE 
+    link rel="icon" href="pic.png" type="img/x-icon
+    -->
+    <!--<div id="prvi_odeljak" koristimo da oznacimo neku celinu u html-u koju kasnije zelimo da pozovemo
+    u css da bismo je odradili
+    poziv dela <div u css se vrsi preko #prvi_odeljak{}-->
+    <!--
+        u <head> se vrsi povezivanje html i css dokumenta ovom linijom koda
+        <link rel="stylesheet" href="style.css" type="text/css">    
+    -->
+</head>
+
+<body>
+    <div id="wrap">
+        <header>
+            <h1><a href="#">Naslov sajta</a></h1>
+            <h2>Opis sajta</h2>
+
+        </header>
+        <div id="meni">
+            <ul>
+                <li><a href="index.html">Početna</a></li>
+                <li><a href="druga.html">O nama</a></li>
+                <li><a href="http://www.elab.rs/">Sajt predmeta</a></li>
+                <li><a href="logovanje.html">Logovanje</a></li>
+            </ul>
+        </div>
+
+        <div id="sadrzaj">
+            <div id="glavna_kolona">
+                <br />
+                <!--<img src="images/pic.png" alt="Logo Elab-a" style="border: 3px solid #ccc;" />-->
+                <img src="pic.png" alt="Logo Elab-a" />
+                <br />
+                <h2>Sadržaj sajta</h2>
+                <div id="articles">
+                    Templejt sajta za Elektronsko poslovanje. Sajt predmeta možete posetiti na ovom <a
+                        href="http://www.elab.rs/" target="_blank">linku</a>. Tim Elab-a je realizovao ovaj templejt.
+
+                    Ovaj templejt je dozvoljeno koristiti u sve svrhe pa i komercijalne. Nadamo se da će studenti
+                    uživati u
+                    ovim vežbama.
+                </div>
+
+                <h2><a href="#">Naslov linka.</a></h2>
+                <div class="articles">
+                    Cilj ovog kursa je da se studenti upoznaju sa modelima, formama i infrastrukturom elektronskog
+                    poslovanja, kako bi se osposobili za projektovanje i implementaciju takvih sistema. Cilj ovih vežbi
+                    je
+                    izrada veb prezentacija, savladavanje HTML, CSS, JavaScript i JQuery tehnologija.
+                </div>
+                <h3>Kategorije :</h3>
+                <ul>
+                    <li><a href="#">HTML</a></li>
+                    <li><a href="#">HTML5</a></li>
+                    <li><a href="#">CSS</a></li>
+                    <li><a href="#">JavaScript</a></li>
+                    <li><a href="#">jQuery</a></li>
+                </ul>
+
+                <h3>Forma za registraciju:</h3>
+                <form name="registracija" action="logovanje.html" method="get">
+                    <input type="radio" name="pol" value="Muškarac">Muškarac<br />
+                    <input type="radio" name="pol" value="Devojka">Devojka<br />
+                    <p>Upoznat sam sa sledećim pojmovima:</p>
+                    <input type="checkbox" name="Pojmovi" value="HTML">HTML<br />
+                    <input type="checkbox" name="Pojmovi" value="CSS">CSS<br />
+                    <input type="checkbox" name="Pojmovi" value="JavaScript">CSS<br />
+                    <input type="checkbox" name="Pojmovi" value="jQuery">CSS<br />
+                    <textarea rows="4" cols="50">
+                    Napišite osnovne podatke o sebi.
+                    </textarea>
+                    <br />
+                    <input type="submit" value="Potvrdi">
+                    <input type="reset" value="Resetuj">
+                </form>
+                <br />
+            </div>
+            <div id="desna kolona">
+                <h2>Novosti</h2>
+                <ul>
+                    <li><a href="#">Prva vest</a></li>
+                    <li><a href="#">Druga vest</a></li>
+                    <li><a href="#">Treća vest</a></li>
+                    <li><a href="#">Četvrta vest</a></li>
+                    <li><a href="#">Peta vest</a></li>
+                    <li><a href="#">Šesta vest</a></li>
+                    <li><a href="#">Sedma vest</a></li>
+                    <li><a href="#">Osma vest</a></li>
+                    <li><a href="#">Deveta vest</a></li>
+                    <li><a href="#">Deseta vest</a></li>
+                </ul>
+
+                <h2>Forma za logovanje</h2>
+
+                <form name="logovanje" action="druga.html" method="get">
+                    Korisničko ime:<br /><input type="text" name="korisničko ime"><br />
+                    Šifra:<br /><input type="password" name="šifra">
+                    <input type="submit" value="Potvrdi">
+                </form>
+            </div>
+        </div>
+        <footer>
+            Designed by Elab team
+        </footer>
+    </div>
+</body>
+
+<!--Boja teksta
+h3{
+    color: blue;
+}
+
+mragina el udaljen od stalih ele,
+    padding koliko je udaljen od svoje ivice 
+
+body{
+        font: 0.8em Arial,Sans-Serif;
+        Drugi smo naveli da ukoliko ne radi ariel radi sans serif
+    }
+line-height: 1.8em; velicina svake linije koda
+
+a:hover{
+    kada se na link predje misem
+}
+
+img {
+        border: 10px solid blueviolet;-ivica slike
+    }
+
+
+    pristup div elementima prekpo #naziv_id
+
+    padding: 10px 10px 3px 10px; gore levo dole desno
+
+    float: left; za pozicioniranje uz levu ivicu
+    border: 1px dotted; ivica sa tackicama, solid je puna linija
+
+    .articles odnosi se na klase
+    #articles odnosi se na id
+
+-->
+
+</html>

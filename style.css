@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    /*margin je oznaka za udaljenost od margina, a padding od ivica tog elementa npr da je padding 5px onda bi text bio u pravugaoniku
+    uvucen 5px*/
+}
+
+h2 {
+    margin: 10px 0px 10px;
+    padding: 10px 0 3px;
+}
+
+h3 {
+    margin-left: 10px;
+    color: red;
+}
+
+body {
+    font: 0.8em Arial, Sans-Serif;
+    line-height: 1.8em;
+    /*line-height je razmk izmedju linija teksta*/
+    background: #333;
+    color: #444;
+    /*background je boja pozadine, color je boja slova*/
+}
+
+a {
+    color: lightblue;
+}
+
+a:visited {
+    /*nakon posecivanja linka*/
+    color: lightgreen;
+}
+
+a:hover {
+    /*nakon prelaska misem preko linka*/
+    color: #333;
+}
+
+ul {
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+li {
+    line-height: 1em;
+}
+
+p {
+    margin: 5px 0 10px 0;
+}
+
+img {
+    border: 10px solid blueviolet;
+}
+
+#wrap {
+    padding: 10px 10px 3px 10px;
+    width: 760px;
+    margin: 20px;
+    background: #333;
+}
+
+#sadrzaj {
+    float: left;
+    background: #ffd8af;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    border: 1px dotted #ff8b1e;
+    width: 760px;
+
+}
+
+#glavna_kolona {
+    float: left;
+    width: 520px;
+    padding-right: 10px;
+    margin-right: 10px;
+    min-height: 850px;
+}
+
+#desna_kolona {
+    float: left;
+    width: 190px;
+    margin-left: 10px;
+    padding-left: 5px;
+    background: #fffacd;
+    min-height: 850px;
+}
+
+#sadrzaj ul {
+    padding: 5px 10px 10px 10px;
+    margin: 0;
+}
+
+#meni ul li a {
+    float: left;
+    /*text decoration ukoliko zelimo da link pude ili ne bude podvucen*/
+    text-decoration: none;
+    color: white;
+    padding: 10.5px 11px;
+    background: #444;
+}
+
+#meni ul a:hover {
+    color: orange;
+    text-decoration: underline;
+}
+
+.articles {
+    color: red;
+}
+
+h1,
+h2 {
+    background: palegreen;
+}
